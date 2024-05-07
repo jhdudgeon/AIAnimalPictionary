@@ -126,6 +126,7 @@ struct PlayView: View {
       UIGraphicsEndImageContext()
     }
 
+    // FIXME: remove this
     saveTestImage(image: newImage)
 
     return newImage
@@ -133,6 +134,7 @@ struct PlayView: View {
 
   func buffer(from image: UIImage) -> CVPixelBuffer? {
 
+    // FIXME: save after resize
     saveTestImage(image: image)
 
     // first resize image to 360x360
