@@ -6,12 +6,13 @@
 //
 
 import SwiftUI
+import CoreML
 
 @main
-struct AI_Animal_PictionaryApp: App {
-    var body: some Scene {
-        WindowGroup {
-            ContentView()
-        }
+struct AIAnimalPictionaryApp: App {
+  var body: some Scene {
+    WindowGroup {
+      LandingView()
     }
+  }
 }
