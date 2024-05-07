@@ -209,7 +209,10 @@ struct PlayView: View {
   }
 }
 
-struct Canvas {
+// line =>
+// var points: [CGPoint] = []
+
+struct Line {
   var points: [CGPoint] = []
   mutating func addPoint(_ point: CGPoint) {
     points.append(point)
@@ -219,19 +222,49 @@ struct Canvas {
   }
 }
 
+struct Canvas {
+  var lines: [Line] = []
+  
+  init() {
+  }
+  
+  mutating func addLine() {
+    // the current line
+    lines.append(Line())
+  }
+  mutating func addPoint(_ point: CGPoint) {
+    // the current line
+    if( lines.count == 0){
+      lines.append(Line())
+    }
+    lines[lines.count-1].addPoint(point)
+  }
+  mutating func clear() {
+    lines.removeAll()
+  }
+}
+
 struct DrawingCanvas: View {
   @Binding var canvas: Canvas
   var body: some View {
     GeometryReader { geometry in
       Path { path in
-        for point in canvas.points {
-          let x = point.x * geometry.size.width
-          let y = point.y * geometry.size.height
-          if path.isEmpty {
-            path.move(to: CGPoint(x: x, y: y))
-          } else {
-            path.addLine(to: CGPoint(x: x, y: y))
+        for line in canvas.lines {
+          var x: CGFloat = 0
+          var y: CGFloat = 0
+          var firstPoint = true
+          for point in line.points {
+            x = point.x * geometry.size.width
+            y = point.y * geometry.size.height
+            if (firstPoint)  {
+              path.move(to: CGPoint(x: x, y: y))
+            } else {
+              path.addLine(to: CGPoint(x: x, y: y))
+            }
+            firstPoint = false
           }
+          path.closeSubpath()
+          path.move(to: CGPoint(x: x, y: y))
         }
       }
       .stroke(Color.black, lineWidth: 5)
@@ -243,6 +276,9 @@ struct DrawingCanvas: View {
             let scaledLocation = CGPoint(
               x: location.x / geometry.size.width, y: location.y / geometry.size.height)
             canvas.addPoint(scaledLocation)
+          }
+          .onEnded {_ in 
+            canvas.addLine()
           }
       )
       .drawingGroup()  // Use drawingGroup for better performance
