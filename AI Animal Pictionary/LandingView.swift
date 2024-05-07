@@ -54,7 +54,11 @@ struct LandingView: View {
           }
           .onAppear {
             // Load the audio file
+<<<<<<< HEAD
             if let audioURL = Bundle.main.url(forResource: "Elevator_Ride", withExtension: "mp3") {
+=======
+            if let audioURL = Bundle.main.url(forResource: "Elevator_Ride.mp3", withExtension: "mp3") {
+>>>>>>> cole-changes
               do {
                 // Initialize the audio player
                 audioPlayer = try AVAudioPlayer(contentsOf: audioURL)
