@@ -1,0 +1,10 @@
+{
+  "MLModelDescriptionKey" : "Has ability to identify:\nFish\nDog\nChicken\nT-Rex",
+  "MLModelCreatorDefinedKey" : {
+    "com.apple.createml.version" : "14.2.1",
+    "com.apple.createml.app.tag" : "121.3",
+    "com.apple.coreml.model.preview.type" : "imageClassifier",
+    "com.apple.createml.app.version" : "5.0"
+  },
+  "MLModelAuthorKey" : "James Dudgeon"
+}

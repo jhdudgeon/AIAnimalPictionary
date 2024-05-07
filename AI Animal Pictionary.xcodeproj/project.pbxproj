@@ -7,13 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		390BF2212BCDD945000587B5 /* LandingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 390BF2202BCDD945000587B5 /* LandingView.swift */; };
+		390BF2222BCDD945000587B5 /* LandingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 390BF2202BCDD945000587B5 /* LandingView.swift */; };
+		390BF2232BCDD945000587B5 /* LandingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 390BF2202BCDD945000587B5 /* LandingView.swift */; };
+		390BF2252BCDD984000587B5 /* InstructionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 390BF2242BCDD984000587B5 /* InstructionsView.swift */; };
+		390BF2262BCDD984000587B5 /* InstructionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 390BF2242BCDD984000587B5 /* InstructionsView.swift */; };
+		390BF2272BCDD984000587B5 /* InstructionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 390BF2242BCDD984000587B5 /* InstructionsView.swift */; };
+		390BF2292BCDD9AC000587B5 /* PlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 390BF2282BCDD9AC000587B5 /* PlayView.swift */; };
+		390BF22A2BCDD9AC000587B5 /* PlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 390BF2282BCDD9AC000587B5 /* PlayView.swift */; };
+		390BF22B2BCDD9AC000587B5 /* PlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 390BF2282BCDD9AC000587B5 /* PlayView.swift */; };
 		39615ACA2BBB6AD800BA70FD /* AI_Animal_PictionaryApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39615AC92BBB6AD800BA70FD /* AI_Animal_PictionaryApp.swift */; };
-		39615ACC2BBB6AD800BA70FD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39615ACB2BBB6AD800BA70FD /* ContentView.swift */; };
 		39615ACE2BBB6ADD00BA70FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 39615ACD2BBB6ADD00BA70FD /* Assets.xcassets */; };
 		39615AD12BBB6ADD00BA70FD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 39615AD02BBB6ADD00BA70FD /* Preview Assets.xcassets */; };
 		39615ADB2BBB6ADE00BA70FD /* AI_Animal_PictionaryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39615ADA2BBB6ADE00BA70FD /* AI_Animal_PictionaryTests.swift */; };
 		39615AE52BBB6ADE00BA70FD /* AI_Animal_PictionaryUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39615AE42BBB6ADE00BA70FD /* AI_Animal_PictionaryUITests.swift */; };
 		39615AE72BBB6ADE00BA70FD /* AI_Animal_PictionaryUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39615AE62BBB6ADE00BA70FD /* AI_Animal_PictionaryUITestsLaunchTests.swift */; };
+		A5BEED492BE2E32600A99E16 /* MLCompute.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5BEED472BE2E32600A99E16 /* MLCompute.framework */; };
+		A5BEED4A2BE2E32600A99E16 /* CoreML.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5BEED482BE2E32600A99E16 /* CoreML.framework */; };
+		A5BEED4D2BE2E81800A99E16 /* AIAnimalPictionary(FDCT).mlpackage in Sources */ = {isa = PBXBuildFile; fileRef = A5BEED4C2BE2E81800A99E16 /* AIAnimalPictionary(FDCT).mlpackage */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,9 +45,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		390BF2202BCDD945000587B5 /* LandingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingView.swift; sourceTree = "<group>"; };
+		390BF2242BCDD984000587B5 /* InstructionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstructionsView.swift; sourceTree = "<group>"; };
+		390BF2282BCDD9AC000587B5 /* PlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayView.swift; sourceTree = "<group>"; };
 		39615AC62BBB6AD800BA70FD /* AI Animal Pictionary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AI Animal Pictionary.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		39615AC92BBB6AD800BA70FD /* AI_Animal_PictionaryApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AI_Animal_PictionaryApp.swift; sourceTree = "<group>"; };
-		39615ACB2BBB6AD800BA70FD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		39615ACD2BBB6ADD00BA70FD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		39615AD02BBB6ADD00BA70FD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		39615AD62BBB6ADE00BA70FD /* AI Animal PictionaryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "AI Animal PictionaryTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +57,10 @@
 		39615AE02BBB6ADE00BA70FD /* AI Animal PictionaryUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "AI Animal PictionaryUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		39615AE42BBB6ADE00BA70FD /* AI_Animal_PictionaryUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AI_Animal_PictionaryUITests.swift; sourceTree = "<group>"; };
 		39615AE62BBB6ADE00BA70FD /* AI_Animal_PictionaryUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AI_Animal_PictionaryUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		A5BEED472BE2E32600A99E16 /* MLCompute.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MLCompute.framework; path = System/Library/Frameworks/MLCompute.framework; sourceTree = SDKROOT; };
+		A5BEED482BE2E32600A99E16 /* CoreML.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreML.framework; path = System/Library/Frameworks/CoreML.framework; sourceTree = SDKROOT; };
+		A5BEED4C2BE2E81800A99E16 /* AIAnimalPictionary(FDCT).mlpackage */ = {isa = PBXFileReference; lastKnownFileType = folder.mlpackage; name = "AIAnimalPictionary(FDCT).mlpackage"; path = "../AIAnimalPictionary(FDCT).mlpackage"; sourceTree = "<group>"; };
+		A5BEED4E2BE2EEA100A99E16 /* AI-Animal-Pictionary-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "AI-Animal-Pictionary-Info.plist"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +68,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A5BEED492BE2E32600A99E16 /* MLCompute.framework in Frameworks */,
+				A5BEED4A2BE2E32600A99E16 /* CoreML.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +97,7 @@
 				39615AD92BBB6ADE00BA70FD /* AI Animal PictionaryTests */,
 				39615AE32BBB6ADE00BA70FD /* AI Animal PictionaryUITests */,
 				39615AC72BBB6AD800BA70FD /* Products */,
+				A5BEED462BE2E32600A99E16 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -94,10 +114,14 @@
 		39615AC82BBB6AD800BA70FD /* AI Animal Pictionary */ = {
 			isa = PBXGroup;
 			children = (
-				39615AC92BBB6AD800BA70FD /* AI_Animal_PictionaryApp.swift */,
-				39615ACB2BBB6AD800BA70FD /* ContentView.swift */,
-				39615ACD2BBB6ADD00BA70FD /* Assets.xcassets */,
+				A5BEED4E2BE2EEA100A99E16 /* AI-Animal-Pictionary-Info.plist */,
 				39615ACF2BBB6ADD00BA70FD /* Preview Content */,
+				39615ACD2BBB6ADD00BA70FD /* Assets.xcassets */,
+				A5BEED4C2BE2E81800A99E16 /* AIAnimalPictionary(FDCT).mlpackage */,
+				39615AC92BBB6AD800BA70FD /* AI_Animal_PictionaryApp.swift */,
+				390BF2202BCDD945000587B5 /* LandingView.swift */,
+				390BF2282BCDD9AC000587B5 /* PlayView.swift */,
+				390BF2242BCDD984000587B5 /* InstructionsView.swift */,
 			);
 			path = "AI Animal Pictionary";
 			sourceTree = "<group>";
@@ -125,6 +149,15 @@
 				39615AE62BBB6ADE00BA70FD /* AI_Animal_PictionaryUITestsLaunchTests.swift */,
 			);
 			path = "AI Animal PictionaryUITests";
+			sourceTree = "<group>";
+		};
+		A5BEED462BE2E32600A99E16 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A5BEED482BE2E32600A99E16 /* CoreML.framework */,
+				A5BEED472BE2E32600A99E16 /* MLCompute.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,8 +290,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				39615ACC2BBB6AD800BA70FD /* ContentView.swift in Sources */,
+				390BF2292BCDD9AC000587B5 /* PlayView.swift in Sources */,
+				390BF2212BCDD945000587B5 /* LandingView.swift in Sources */,
+				390BF2252BCDD984000587B5 /* InstructionsView.swift in Sources */,
 				39615ACA2BBB6AD800BA70FD /* AI_Animal_PictionaryApp.swift in Sources */,
+				A5BEED4D2BE2E81800A99E16 /* AIAnimalPictionary(FDCT).mlpackage in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,6 +302,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				390BF2222BCDD945000587B5 /* LandingView.swift in Sources */,
+				390BF2262BCDD984000587B5 /* InstructionsView.swift in Sources */,
+				390BF22A2BCDD9AC000587B5 /* PlayView.swift in Sources */,
 				39615ADB2BBB6ADE00BA70FD /* AI_Animal_PictionaryTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -274,6 +313,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				390BF22B2BCDD9AC000587B5 /* PlayView.swift in Sources */,
+				390BF2232BCDD945000587B5 /* LandingView.swift in Sources */,
+				390BF2272BCDD984000587B5 /* InstructionsView.swift in Sources */,
 				39615AE72BBB6ADE00BA70FD /* AI_Animal_PictionaryUITestsLaunchTests.swift in Sources */,
 				39615AE52BBB6ADE00BA70FD /* AI_Animal_PictionaryUITests.swift in Sources */,
 			);
@@ -419,22 +461,30 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"AI Animal Pictionary/Preview Content\"";
+				DEVELOPMENT_TEAM = KJCY8LYF36;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "AI-Animal-Pictionary-Info.plist";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.games";
+				INFOPLIST_KEY_LSSupportsOpeningDocumentsInPlace = YES;
+				INFOPLIST_KEY_NSDocumentsFolderUsageDescription = "Save screenshots here";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "James-Dudgeon.AI-Animal-Pictionary";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.crescentwrench.JamesDudgeon.AI-Animal-Pictionary";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -447,22 +497,30 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"AI Animal Pictionary/Preview Content\"";
+				DEVELOPMENT_TEAM = KJCY8LYF36;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "AI-Animal-Pictionary-Info.plist";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.games";
+				INFOPLIST_KEY_LSSupportsOpeningDocumentsInPlace = YES;
+				INFOPLIST_KEY_NSDocumentsFolderUsageDescription = "Save screenshots here";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "James-Dudgeon.AI-Animal-Pictionary";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.crescentwrench.JamesDudgeon.AI-Animal-Pictionary";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
